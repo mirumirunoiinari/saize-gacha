@@ -1,0 +1,35 @@
+.btn{
+    background-color: aquamarine;
+    width: 200px;
+    height: 60px;
+    font-size: 30px;
+    justify-self: center;
+}
+
+h1{
+    text-align:center;
+}
+
+#result {
+  white-space: pre-line;
+  font-size: 20px;
+  
+}
+
+.form-area{
+    display: grid;
+    grid-template-columns: 120px 400px 100px;
+    column-gap: 30px;
+    align-items: start;
+}
+.checkbox label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#count{
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
+    border-radius: 8px;
+}

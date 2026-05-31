@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title class="title">n円ガチャ</title>
+    </head>
+
+    <body>
+        <h1>サイゼリヤ1000円ガチャ</h1>
+        <div class="form-area">
+            <input id="count" type="number" value="1000">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="category" value="ピザ">
+                    ピザは選ばれないようにする
+                </label>
+                <label>
+                    <input type="checkbox" name="category" value="ワイン">
+                    ワインは選ばれないようにする
+                </label>
+            </div>
+            <button id="button" class="btn">ガチャ！</button>
+        </div>
+        <p id="result">結果はこちら</p>
+
+        <script src="index.js"></script>
+    </body>
+</html>
