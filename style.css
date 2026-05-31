@@ -3,7 +3,7 @@
     width: 200px;
     height: 60px;
     font-size: 30px;
-    justify-self: center;
+   
 }
 
 h1{
@@ -12,13 +12,13 @@ h1{
 
 #result {
   white-space: pre-line;
-  font-size: 20px;
-  
+  font-size: 15px;
+
 }
 
 .form-area{
     display: grid;
-    grid-template-columns: 120px 400px 100px;
+    grid-template-columns: 120px 200px 100px;
     column-gap: 30px;
     align-items: start;
 }
