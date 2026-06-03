@@ -278,11 +278,32 @@ let MenuList = [
 
 const RandomButton = document.getElementById("button");
 const result = document.getElementById("result");
+const ExcludeWine = document.getElementById("isExcludeWine");
+const ExcludePizza = document.getElementById("isExcludePizza");
+const ExcludeDrink = document.getElementById("isExcludeDrink");
+const IncludeDrink = document.getElementById("isIncludeOgori");
+const isOgori = document.getElementById("isOgori");
 RandomButton.addEventListener("click", function() {
   let MenuLists = [...MenuList];
   let sumPrice= 1000;
   let resultMenu = [];
   let endCount = 0;
+  let RandomOgori = Math.floor(Math.random() * 100) + 1;
+  console.log(RandomOgori);
+  if(ExcludeWine.checked){
+    MenuLists = MenuLists.filter(menu => menu.category !== "wine");
+  }
+  if(ExcludePizza.checked){
+    MenuLists = MenuLists.filter(menu => menu.category !== "pizza");
+  }
+  if(ExcludeDrink.checked){
+    MenuLists = MenuLists.filter(menu => menu.category !== "additional");
+  }
+  if(IncludeDrink.checked && (RandomOgori==77 || RandomOgori==7)){
+    isOgori.textContent = "☆奢り決定☆";
+  }else{
+    isOgori.textContent = "";
+  }
   while(sumPrice>0){
     let randomIndex = Math.floor(Math.random() * MenuLists.length);
     let RandomMenu = MenuLists[randomIndex];
