@@ -8,12 +8,17 @@
     </head>
 
     <body>
-        <div class="baner">
+
+        <div id="result_area">
+            <p id="isOgori"></p>
+            <p id="result"></p>
+        </div>
+        <div class="baner" id="banner">
             <h1>サイゼリヤ1000円ガチャ</h1>
             <div class="container">
                 <div class="form-area">
             
-                    <div class="checkbox">
+                    <div class="checkbox" id="checkbox">
                         <label>
                             <input type="checkbox" id="isExcludePizza">ピザを除外する
                         </label>
@@ -26,7 +31,7 @@
                         <label>
                             <input type="checkbox" id="isIncludeOgori">奢りガチャを有効にする
                         </label>
-                        <div class="warning">
+                        <div class="warning" >
                             奢りガチャは２％の確率で奢りが出ます。<br>
                             奢りが出た人は他の人の分も奢ります。
                         </div>
@@ -34,8 +39,6 @@
                 </div>
             </div>
             <button id="button" class="btn">ガチャ！</button>
-            <p id="isOgori"></p>
-            <p id="result">結果はこちら</p>
         </div>
         <script src="index.js"></script>
     </body>

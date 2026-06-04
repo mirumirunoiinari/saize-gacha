@@ -65,9 +65,10 @@ h1{
 }
 
 #result {
+    background-color: chartreuse;
     user-select: none;
     white-space: pre-line;
-    font-size: 22px;
+    font-size: 40px;
 
 }
 
@@ -93,8 +94,9 @@ h1{
 
 #isOgori{
     user-select: none;
-    font-size: 45px;
+    font-size: 30px;
     background-color: gold;
+    text-align: center
 
 }
 
@@ -103,4 +105,12 @@ h1{
     width: 88%;
     padding: 32px 20px;
   }
+}
+
+.hidden{
+    display: none;
+}
+
+#result_area{
+    display: none;
 }

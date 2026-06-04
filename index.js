@@ -216,7 +216,7 @@ let MenuList = [
   }
   ,
   {
-    name:"プリンとティラミス　クラシコの盛り合わせ",
+    name:"プリンとティラミスクラシコの盛り合わせ",
     price:500,
     category:"dessert"
   }
@@ -283,12 +283,16 @@ const ExcludePizza = document.getElementById("isExcludePizza");
 const ExcludeDrink = document.getElementById("isExcludeDrink");
 const IncludeDrink = document.getElementById("isIncludeOgori");
 const isOgori = document.getElementById("isOgori");
+const banner = document.getElementById("banner");
+const result_area = document.getElementById("result_area");
 RandomButton.addEventListener("click", function() {
   let MenuLists = [...MenuList];
   let sumPrice= 1000;
   let resultMenu = [];
   let endCount = 0;
   let RandomOgori = Math.floor(Math.random() * 100) + 1;
+  banner.style.display = "none";
+  result_area.style.display = "block";
   console.log(RandomOgori);
   if(ExcludeWine.checked){
     MenuLists = MenuLists.filter(menu => menu.category !== "wine");
