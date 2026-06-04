@@ -67,8 +67,8 @@ h1{
 #result {
     background-color: chartreuse;
     user-select: none;
-    white-space: pre-line;
-    font-size: 40px;
+    white-space: nowrap;
+    font-size: clamp(1px, 8vw, 48px);
 
 }
 
