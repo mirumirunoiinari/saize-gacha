@@ -67,7 +67,8 @@ h1{
 #result {
     background-color: chartreuse;
     white-space: pre-line;
-    font-size: clamp(1px, 1.2vw, 48px);
+    /* font-size: clamp(4px, 1.2vw, 48px); */
+    font-size: 22px;
     text-align: center;
 }
 
