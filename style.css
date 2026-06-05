@@ -66,11 +66,11 @@ h1{
 
 #result {
     background-color: chartreuse;
-    user-select: none;
-    white-space: nowrap;
-    font-size: clamp(1px, 8vw, 48px);
-
+    white-space: pre-line;
+    font-size: clamp(1px, 0.5vw, 48px);
+    text-align: center;
 }
+
 
 .form-area{
 }
